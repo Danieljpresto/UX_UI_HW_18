@@ -2,7 +2,7 @@ body {
     margin: 0;
 }
 header {
-    background-color: #699bf8;
+    background-color:#f9edcc8;
     padding: 15px;
 }
 header ul {
@@ -41,13 +41,13 @@ li {
 }
 button {
     padding: 15px;
-    background-color: darkslategray;
+    background-color: #ba5a31 ;
     color: white;
     font-size: 15px;
     border-radius: 4px;
 }
 footer {
-    background-color: darkslategray;
+    background-color:#f9edcc;
     padding: 5px;
     color: white;
 }
@@ -120,4 +120,18 @@ footer li {
 }
 .content3 {
     grid-area: content3;
+}
+/* Mobile Media Query */
+@media only screen and (max-width: 600){
+    #flexContainer: columns;
+     width: 100%;
+     #categoryGrid {
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+        grid-template-areas: 
+            "img1 content1"
+            "img2 content2"
+            "img3 content3"
+            ;
+     }
 }
