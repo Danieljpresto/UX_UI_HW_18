@@ -2,19 +2,31 @@ body {
     margin: 0;
 }
 header {
-    background-color: darkslategray;
+    background-color: #699bf8;
     padding: 15px;
 }
 header ul {
     float: right;
     color:cadetblue;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
 }
+p, h1, h2, h3, h4 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 header li {
     display: inline-block;
-    padding: 0px 5px;
+    padding: 0px 15px;
 }
 header p {
     display: inline-block;
+}
+.logo {
+    height: 75px;
+}
+li {
+    color:black;
 }
 .heroImg {
     background-color: white;
@@ -61,6 +73,10 @@ footer li {
     width: 33%;
     padding: 25px;
 }
+.flexContainer div img {
+    width: 100%;
+    height: auto;
+}
 
 /* My Work Section */
 .myWork {
@@ -71,7 +87,7 @@ footer li {
 .workGrid {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 350px 350px 350px;
+    grid-template-rows: 2fr 1fr 2fr;
     grid-template-areas: 
     "img1 content1"
     "img2 content2"
@@ -80,9 +96,9 @@ footer li {
 }
 .workGrid img {
     width: 100%;
-    max-width: 250px;
     margin: 0 auto;
     display: block;
+    height: auto;
 }
 .img1 {
     grid-area: img1;
